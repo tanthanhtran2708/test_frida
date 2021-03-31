@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/item_account_parent" android:background="@drawable/bkgd_grey_100_rounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="10.0dip" app:srcCompat="@drawable/ic_information" />
+    <androidx.appcompat.widget.AppCompatTextView android:ellipsize="middle" android:gravity="center_vertical" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Text.Standard.12" />
+</LinearLayout>

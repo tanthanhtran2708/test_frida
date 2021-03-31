@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/rounded_view_grey_border" android:padding="@dimen/very_small_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/very_small_margin" android:layout_marginBottom="@dimen/very_small_margin" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/asset_label_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dashboard_asset_item_label_title" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Text.Semibold.14" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/asset_label_description" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@id/asset_label_title" app:layout_constraintTop_toBottomOf="@id/asset_label_title" style="@style/Text.Light.12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

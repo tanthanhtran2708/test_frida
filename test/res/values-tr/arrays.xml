@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mnemonic_word_requests">
+        <item>İlk kelime</item>
+        <item>ikinci kelime</item>
+        <item>üçüncü kelime</item>
+        <item>dördüncü kelime</item>
+        <item>beşinci kelime</item>
+        <item>altıncı kelime</item>
+        <item>yedinci kelime</item>
+        <item>sekizinci kelime</item>
+        <item>dokuzuncu kelime</item>
+        <item>onuncu kelime</item>
+        <item>onbirinci kelime</item>
+        <item>onikinci kelime</item>
+    </string-array>
+    <string-array name="xlm_memo_types_manual">
+        <item>@string/xlm_memo_text</item>
+        <item>@string/xlm_memo_id</item>
+    </string-array>
+</resources>

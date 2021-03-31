@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <mobi.lab.veriff.layouts.VeriffToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <ScrollView android:id="@id/intro_scroll" android:layout_width="fill_parent" android:layout_height="0.0px" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/intro_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_l" android:paddingStart="@dimen/vrff_margin_24" android:paddingEnd="@dimen/vrff_margin_24">
+            <com.veriff.views.VeriffTextView android:id="@id/intro_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_l" style="@style/vrffText.title" />
+            <com.veriff.views.VeriffTextView android:textStyle="bold" android:id="@id/intro_instruction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_l" android:textAllCaps="true" style="@style/vrffText.14" />
+            <com.veriff.sdk.internal.widgets.ProgressItem android:id="@id/nfcTip1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:vrff_progress_state="done" />
+            <com.veriff.sdk.internal.widgets.ProgressItem android:id="@id/nfcTip2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:vrff_progress_state="done" />
+            <com.veriff.sdk.internal.widgets.ProgressItem android:id="@id/nfcTip3" android:layout_width="fill_parent" android:layout_height="wrap_content" app:vrff_progress_state="done" />
+            <com.veriff.sdk.internal.widgets.ProgressItem android:id="@id/nfcTip4" android:layout_width="fill_parent" android:layout_height="wrap_content" app:vrff_progress_state="done" />
+            <Space android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="8.0dip" android:layout_weight="1.0" />
+            <mobi.lab.veriff.layouts.VeriffButton android:id="@id/nfc_try_again" android:layout_width="fill_parent" android:layout_height="@dimen/vrff_button_height" android:layout_marginTop="@dimen/vrff_margin_l" android:layout_marginBottom="@dimen/vrff_margin_24" app:vrff_button_type="button_text" app:vrff_button_ui="button_filled" />
+            <com.veriff.views.VeriffTextView android:gravity="center" android:id="@id/nfc_error_skip_step_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/vrff_margin_24" android:layout_marginEnd="@dimen/vrff_margin_24" style="@style/vrffText.16" />
+            <com.veriff.views.VeriffTextView android:textStyle="bold" android:gravity="center" android:id="@id/nfc_error_skip_step" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_s" android:layout_marginBottom="@dimen/vrff_margin_l" android:layout_marginStart="@dimen/vrff_margin_24" android:layout_marginEnd="@dimen/vrff_margin_24" style="@style/vrffText.16" />
+        </LinearLayout>
+    </ScrollView>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/interest_dashboard_list" android:fadingEdge="vertical" android:fadingEdgeLength="@dimen/very_small_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:requiresFadingEdge="vertical" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/interest_dashboard_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <piuk.blockchain.android.ui.customviews.EmptyStateView android:id="@id/interest_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

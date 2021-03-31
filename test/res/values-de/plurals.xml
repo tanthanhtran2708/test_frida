@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="backup_before_send_later_label">
+        <item quantity="other">Sie haben %1$d Sendungen, ohne verbleibende Sicherung</item>
+        <item quantity="one">Sie haben %1$d Sendung, ohne verbleibende Sicherung</item>
+    </plurals>
+</resources>

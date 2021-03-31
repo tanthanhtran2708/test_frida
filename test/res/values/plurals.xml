@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="backup_before_send_later_label">
+        <item quantity="other">You have %1$d sends without backing up remaining</item>
+        <item quantity="one">You have %1$d send without backing up remaining</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_general" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_margin" android:hint="@string/wallet_id">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/wallet_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textVisiblePassword|textNoSuggestions" android:imeOptions="actionNext" android:contentDescription="@string/wallet_id" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_margin" android:hint="@string/password" app:passwordToggleEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/wallet_pass" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textPassword" android:imeOptions="actionGo" android:contentDescription="@string/password" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:layout_gravity="center" android:id="@id/command_next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/standard_margin" android:text="@string/btn_continue" android:contentDescription="@string/btn_continue" style="@style/CtaButton.Blue" />
+</LinearLayout>

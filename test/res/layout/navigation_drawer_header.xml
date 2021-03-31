@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/navigationHeader" android:layout_width="fill_parent" android:layout_height="96.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginStart="@dimen/small_margin" app:srcCompat="@drawable/logo_blockchain" />
+    <View android:layout_alignParentBottom="true" style="@style/Divider" />
+</RelativeLayout>

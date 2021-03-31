@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/button_frame" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/vrff_size_56">
+        <ImageView android:layout_gravity="center" android:id="@id/button_image" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+        <TextView android:gravity="center" android:id="@id/button_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/vrffButton.text" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/button_loader" android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/vrff_button_loading_full" android:indeterminateDuration="2500" />
+    </FrameLayout>
+</merge>

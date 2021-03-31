@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/bt_expiration_date_sheet" android:background="?bt_expiration_date_sheet_background" android:layout_width="fill_parent" android:layout_height="@dimen/bt_expiration_date_sheet_height" android:weightSum="10.0" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="7.0">
+        <TextView android:text="@string/bt_month" style="@style/bt_expiration_date_dialog_label" />
+        <GridView android:id="@id/bt_expiration_month_grid_view" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/bt_expiration_date_dialog_grid_view" />
+    </LinearLayout>
+    <View android:background="?bt_expiration_date_dialog_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+        <TextView android:text="@string/bt_year" style="@style/bt_expiration_date_dialog_label" />
+        <GridView android:scrollbarThumbVertical="?bt_expiration_date_scrollbar_thumb_vertical" android:scrollbarTrackVertical="?bt_expiration_date_scrollbar_track_vertical" android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@id/bt_expiration_year_grid_view" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/bt_expiration_date_dialog_year_grid_view" />
+    </LinearLayout>
+</LinearLayout>

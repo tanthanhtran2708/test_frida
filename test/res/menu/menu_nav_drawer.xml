@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/nav_menu_top">
+        <item android:icon="@drawable/ic_interest_grey_circle" android:id="@id/nav_interest" android:visible="true" android:title="@string/earn_interest" />
+        <item android:icon="@drawable/ic_nav_backup" android:id="@id/nav_backup" android:title="@string/item_backup" app:contentDescription="@string/item_backup" />
+        <item android:icon="@drawable/ic_nav_wallet" android:id="@id/nav_addresses" android:title="@string/drawer_addresses" app:contentDescription="@string/drawer_addresses" />
+        <item android:icon="@drawable/ic_nav_the_exchange" android:id="@id/nav_the_exchange" android:title="@string/item_the_exchange" app:contentDescription="@string/item_the_exchange" />
+        <item android:icon="@drawable/ic_nav_airdrops" android:id="@id/nav_airdrops" android:title="@string/item_airdrops" app:contentDescription="@string/item_airdrops" />
+        <item android:icon="@drawable/ic_nav_hardware" android:id="@id/nav_lockbox" android:visible="false" android:title="@string/item_lockbox" app:contentDescription="@string/item_lockbox" />
+    </group>
+    <group android:id="@id/nav_menu_bottom">
+        <item android:icon="@drawable/ic_nav_web_login" android:id="@id/login_web_wallet" android:title="@string/pairing_code_log_in" app:contentDescription="@string/pairing_code_log_in" />
+        <item android:icon="@drawable/ic_nav_settings" android:id="@id/nav_settings" android:title="@string/action_settings" app:contentDescription="@string/action_settings" />
+        <item android:icon="@drawable/ic_nav_support" android:id="@id/nav_support" android:title="@string/support" app:contentDescription="@string/support" />
+        <item android:icon="@drawable/ic_nav_logout" android:id="@id/nav_logout" android:title="@string/logout" app:contentDescription="@string/logout" />
+        <item android:icon="@drawable/ic_nav_debug_swap" android:id="@id/nav_debug_swap" android:visible="false" android:title="@string/item_debug_homebrew" />
+    </group>
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/preview_toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/vrff_size_56" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/preview_close" android:background="?selectableItemBackground" android:padding="@dimen/vrff_margin_l" android:layout_width="@dimen/vrff_size_56" android:layout_height="@dimen/vrff_size_56" android:src="@drawable/vrff_ic_close" />
+        <com.veriff.views.VeriffTextView android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@id/preview_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/vrff_size_56" app:vrff_text_color="primary" style="@style/vrffText.16" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/vrff_margin_24" android:layout_marginStart="@dimen/vrff_margin_24" android:layout_marginEnd="@dimen/vrff_margin_24" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/preview_toolbar">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/vrff_margin_l" android:layout_weight="1.0">
+            <ImageView android:id="@id/preview_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:importantForAccessibility="no" />
+            <FrameLayout android:id="@id/preview_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <com.veriff.views.VeriffTextView android:id="@id/preview_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/vrff_margin_l" style="@style/vrffText.16" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/preview_btn_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/vrff_size_56">
+            <mobi.lab.veriff.layouts.VeriffButton android:id="@id/preview_btn_retake" android:layout_width="0.0dip" android:layout_height="@dimen/vrff_button_height" android:layout_weight="1.0" android:layout_marginEnd="@dimen/vrff_margin_s" app:vrff_button_img="@drawable/vrff_ic_btn_close" app:vrff_button_type="button_image" app:vrff_button_ui="button_ghost" />
+            <mobi.lab.veriff.layouts.VeriffButton android:id="@id/preview_btn_done" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="@dimen/vrff_button_height" android:layout_weight="1.0" android:layout_marginStart="@dimen/vrff_margin_s" app:vrff_button_img="@drawable/vrff_ic_btn_check" app:vrff_button_type="button_image" app:vrff_button_ui="button_filled" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/inflow_loading" android:visibility="gone" layout="@layout/vrff_inflow_loading" />
+    <include android:id="@id/inflow_no_result" android:visibility="gone" layout="@layout/vrff_inflow_no_result" />
+</androidx.constraintlayout.widget.ConstraintLayout>

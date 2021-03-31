@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetForeground="@color/white">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/parent_constraint_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/appbar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="4.0dip" app:layout_constraintTop_toTopOf="parent">
+                <include android:id="@id/toolbar_main" android:fitsSystemWindows="true" layout="@layout/toolbar_general" />
+            </com.google.android.material.appbar.AppBarLayout>
+            <FrameLayout android:id="@id/content_frame" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/bottom_navigation" app:layout_constraintTop_toBottomOf="@id/appbar_layout" />
+            <com.aurelhubert.ahbottomnavigation.AHBottomNavigation android:layout_gravity="bottom" android:id="@id/bottom_navigation" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.navigation.NavigationView android:layout_gravity="start" android:id="@id/navigation_view" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="fill_parent" app:headerLayout="@layout/navigation_drawer_header" app:insetForeground="@color/primary_navy_dark" app:itemIconTint="@color/nav_icons" app:itemTextColor="@color/nav_menu_text" app:menu="@menu/menu_nav_drawer" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+    <piuk.blockchain.android.ui.tour.TourGuide android:id="@id/tour_guide" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/funds_list" android:fadingEdge="horizontal" android:fadingEdgeLength="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:requiresFadingEdge="horizontal" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/funds_single_item" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <View style="@style/SeparatorWithoutMargins" />
+        <include layout="@layout/item_dashboard_funds" />
+        <View style="@style/SeparatorWithoutMargins" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

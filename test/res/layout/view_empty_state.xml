@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_empty_parent" android:background="@color/white" android:padding="@dimen/standard_margin" android:paddingBottom="@dimen/standard_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/view_empty_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Text.Semibold.Centered.20" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/view_empty_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tiny_margin" style="@style/Text.Standard.Centered.14" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/view_empty_icon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:srcCompat="@drawable/ic_wallet_intro_image" />
+    <Button android:id="@id/view_empty_cta" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" style="@style/CtaButton.Blue" />
+    <Button android:id="@id/view_empty_support_cta" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/contact_support" style="@style/CtaButton.White" />
+</LinearLayout>

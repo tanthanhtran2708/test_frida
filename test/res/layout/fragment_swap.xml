@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/swap_loading_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ViewSwitcher android:id="@id/swap_view_switcher" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/standard_margin">
+            <piuk.blockchain.android.ui.customviews.IntroHeaderView android:id="@id/swap_header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:intro_header_icon="@drawable/ic_swap_blue_circle" app:intro_header_label="@string/swap_header_label" app:intro_header_title="@string/swap_header_title" app:layout_constraintTop_toTopOf="parent" />
+            <piuk.blockchain.android.ui.customviews.TrendingPairsView android:id="@id/swap_trending" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/very_small_margin" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@id/swap_cta" app:layout_constraintTop_toBottomOf="@id/swap_header" app:trending_type="swap" />
+            <include android:id="@id/pending_swaps" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/very_small_margin" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@id/swap_cta" app:layout_constraintTop_toBottomOf="@id/swap_header" layout="@layout/pending_swaps_layout" />
+            <Button android:id="@id/swap_cta" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/swap_cta" app:layout_constraintBottom_toBottomOf="parent" style="@style/CtaButton.Blue" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <piuk.blockchain.android.ui.customviews.VerifyIdentityBenefitsView android:id="@id/swap_kyc_benefits" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ViewSwitcher>
+    <piuk.blockchain.android.ui.customviews.EmptyStateView android:id="@id/swap_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

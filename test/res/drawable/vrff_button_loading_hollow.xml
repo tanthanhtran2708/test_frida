@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate android:toDegrees="360.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <layer-list>
+        <item android:drawable="@drawable/vrff_ic_button_loader_hollow" />
+    </layer-list>
+</rotate>

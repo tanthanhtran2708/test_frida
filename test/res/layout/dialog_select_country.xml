@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar_select_country_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="56.0dip" android:layout_marginBottom="32.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.SearchView android:id="@id/search_view_country" android:layout_width="fill_parent" android:layout_height="wrap_content" app:iconifiedByDefault="false" />
+        <ListView android:theme="@style/PlainTheme" android:id="@id/list_view_countries" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

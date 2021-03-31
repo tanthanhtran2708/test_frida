@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mnemonic_word_requests">
+        <item>primeira palavra</item>
+        <item>segunda palavra</item>
+        <item>terceira palavra</item>
+        <item>quarta palavra</item>
+        <item>quinta palavra</item>
+        <item>sexta palavra</item>
+        <item>sétima palavra</item>
+        <item>oitava palavra</item>
+        <item>nona palavra</item>
+        <item>décima palavra</item>
+        <item>décima primeira palavra</item>
+        <item>décima segunda palavra</item>
+    </string-array>
+    <string-array name="xlm_memo_types_manual">
+        <item>@string/xlm_memo_text</item>
+        <item>@string/xlm_memo_id</item>
+    </string-array>
+</resources>

@@ -1,0 +1,14 @@
+.class public Lorg/bitcoinj/core/SendHeadersMessage;
+.super Lorg/bitcoinj/core/EmptyMessage;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 30
+    invoke-direct {p0}, Lorg/bitcoinj/core/EmptyMessage;-><init>()V
+
+    return-void
+.end method

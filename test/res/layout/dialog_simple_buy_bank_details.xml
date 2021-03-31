@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_margin" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin" style="@style/Text.Standard.20" />
+        <androidx.appcompat.widget.AppCompatTextView android:id="@id/transfer_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/small_margin" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin" style="@style/Text.Light.14" />
+        <piuk.blockchain.android.simplebuy.BankDetailsContainer android:orientation="vertical" android:id="@id/bank_details" android:background="@drawable/rounded_box" android:paddingBottom="@dimen/small_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin" />
+        <androidx.appcompat.widget.AppCompatTextView android:id="@id/bank_deposit_instruction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/small_margin" android:text="@string/recipient_name_must_match" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin" style="@style/Text.Light.12" />
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/small_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatButton android:textColor="@color/red_600" android:id="@id/cta_button_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel_order" android:layout_weight="0.5" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/tiny_margin" style="@style/CtaButton.NoMargin.White" />
+            <androidx.appcompat.widget.AppCompatButton android:id="@id/cta_button_ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/common_ok" android:layout_weight="0.5" android:layout_marginStart="@dimen/tiny_margin" android:layout_marginEnd="@dimen/standard_margin" style="@style/CtaButton.NoMargin.Blue" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

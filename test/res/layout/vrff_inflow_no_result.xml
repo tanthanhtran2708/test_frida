@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/vrffOverlay" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/inflow_container" android:background="@drawable/vrff_inflow_white" android:padding="@dimen/vrff_margin_24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.veriff.views.VeriffTextView android:id="@id/inflow_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/vrff_margin_l" style="@style/vrffText.16" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/inflow_no_btn_container" android:layout_width="fill_parent" android:layout_height="@dimen/vrff_size_56">
+            <mobi.lab.veriff.layouts.VeriffButton android:id="@id/inflow_btn_retake" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/vrff_button_height" android:layout_weight="1.0" android:layout_marginEnd="@dimen/vrff_margin_s" app:vrff_button_img="@drawable/vrff_ic_btn_close" app:vrff_button_type="button_image" app:vrff_button_ui="button_ghost" />
+            <mobi.lab.veriff.layouts.VeriffButton android:id="@id/inflow_btn_done" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/vrff_button_height" android:layout_weight="1.0" android:layout_marginStart="@dimen/vrff_margin_s" app:vrff_button_img="@drawable/vrff_ic_btn_check" app:vrff_button_type="button_image" app:vrff_button_ui="button_filled" />
+            <mobi.lab.veriff.layouts.VeriffButton android:id="@id/inflow_try_again" android:layout_width="fill_parent" android:layout_height="@dimen/vrff_button_height" app:vrff_button_type="button_text" app:vrff_button_ui="button_ghost" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

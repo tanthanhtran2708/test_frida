@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:id="@id/transfer_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.tabs.TabLayout android:id="@id/transfer_tabs" android:background="@color/primary_blue_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/white" app:tabIndicatorHeight="3.0dip" app:tabRippleColor="@null" app:tabSelectedTextColor="@android:color/white" app:tabTextAppearance="@style/Text.Semibold.16" app:tabTextColor="@color/white_with_opacity" />
+    </androidx.viewpager.widget.ViewPager>
+</androidx.constraintlayout.widget.ConstraintLayout>

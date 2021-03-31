@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/primary_navy_dark" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="start|center" android:id="@id/textview_selected_currency" android:background="?selectableItemBackground" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/action_bar_height" android:drawablePadding="8.0dip" android:layout_alignParentTop="true" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" android:layout_alignParentStart="true" />
+    <FrameLayout android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_layout_coin_selection" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:id="@id/textview_bitcoin" android:text="@string/bitcoin" android:drawableStart="@drawable/vector_bitcoin_white" style="@style/CryptoCurrencySelectorTextView" />
+            <TextView android:id="@id/textview_bitcoin_cash" android:text="@string/bitcoin_cash" android:drawableStart="@drawable/vector_bitcoin_cash_white" style="@style/CryptoCurrencySelectorTextView" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

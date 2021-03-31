@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/tour_overlay" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <piuk.blockchain.android.ui.tour.PulseView android:id="@id/pulse" android:layout_width="72.0dip" android:layout_height="72.0dip" app:pulse_color="#ff0c6cf2" app:pulse_count="4" app:pulse_duration="4000" app:pulse_interpolator="AccelerateDecelerate" app:pulse_repeat="0" />
+    <View android:id="@id/touch_hook" android:focusable="true" android:clickable="true" android:layout_width="72.0dip" android:layout_height="72.0dip" android:alpha="0.0" />
+</FrameLayout>

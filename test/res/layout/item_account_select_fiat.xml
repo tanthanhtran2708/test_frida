@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fiat_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/smallest_margin" android:layout_marginEnd="@dimen/smallest_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <piuk.blockchain.android.ui.customviews.account.AccountInfoFiat android:id="@id/fiat_account" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

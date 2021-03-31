@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <piuk.blockchain.android.ui.settings.preferences.CustomPreferenceCategory android:title="@string/profile" android:key="profile" app:iconSpaceReserved="false">
+        <piuk.blockchain.android.ui.settings.preferences.KycStatusPreference android:title="@string/kyc_settings_swap_limit" android:key="identity_verification" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomPreference android:title="@string/options_id" android:key="guid" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomPreference android:title="@string/email" android:key="email" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomPreference android:title="@string/mobile" android:key="mobile" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.ThePitStatusPreference android:title="@string/setting_the_exchange" android:key="the_pit" app:iconSpaceReserved="false" />
+    </piuk.blockchain.android.ui.settings.preferences.CustomPreferenceCategory>
+    <piuk.blockchain.android.ui.settings.preferences.CustomPreferenceCategory android:title="@string/linked_banks" android:key="banks" app:iconSpaceReserved="false" />
+    <piuk.blockchain.android.ui.settings.preferences.CustomPreferenceCategory android:title="@string/linked_cards" android:key="cards" app:iconSpaceReserved="false" />
+    <piuk.blockchain.android.ui.settings.preferences.CustomPreferenceCategory android:title="@string/preferences" android:key="preferences" app:iconSpaceReserved="false">
+        <piuk.blockchain.android.ui.settings.preferences.CustomPreference android:title="@string/options_currency" android:key="fiat" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomSwitchPreference android:title="@string/email_notifications" android:key="email_notifications" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomSwitchPreference android:title="@string/push_notifications" android:key="push_notifications" app:iconSpaceReserved="false" />
+    </piuk.blockchain.android.ui.settings.preferences.CustomPreferenceCategory>
+    <piuk.blockchain.android.ui.settings.preferences.CustomPreferenceCategory android:title="@string/security" android:key="security" app:iconSpaceReserved="false">
+        <piuk.blockchain.android.ui.settings.preferences.CustomPreference android:title="@string/change_pin_code" android:key="pin" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomPreference android:title="@string/change_password" android:key="change_pw" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomSwitchPreference android:title="@string/enable_fingerprint" android:key="fingerprint" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomSwitchPreference android:title="@string/two_fa" android:key="2fa" android:summary="@string/two_fa_summary" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomSwitchPreference android:persistent="true" android:title="@string/enable_screenshots" android:key="screenshots_enabled" android:summary="@string/enable_screenshots_summary" android:defaultValue="false" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomSwitchPreference android:title="@string/tor_requests" android:key="tor" android:summary="@string/tor_summary" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomSwitchPreference android:persistent="true" android:title="@string/shortcut_settings_enable" android:key="receive_shortcuts_enabled" android:summary="@string/shortcut_settings_summary" android:defaultValue="true" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomSwitchPreference android:persistent="true" android:title="@string/swipe_receive_hint" android:key="swipe_to_receive_enabled" android:summary="@string/swipe_receive_preference_summary" android:defaultValue="true" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomSwitchPreference android:title="@string/enable_cloud_backup" android:key="cloud_backup" android:summary="@string/enable_cloud_backup_summary" android:defaultValue="true" app:iconSpaceReserved="false" />
+    </piuk.blockchain.android.ui.settings.preferences.CustomPreferenceCategory>
+    <piuk.blockchain.android.ui.settings.preferences.CustomPreferenceCategory android:title="@string/app" android:key="app" app:iconSpaceReserved="false">
+        <piuk.blockchain.android.ui.settings.preferences.CustomPreference android:title="@string/preferences_about_title" android:key="about" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomPreference android:title="@string/options_tos" android:key="tos" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomPreference android:title="@string/options_privacy" android:key="privacy" app:iconSpaceReserved="false" />
+        <piuk.blockchain.android.ui.settings.preferences.CustomCheckBoxPreference android:title="@string/disable_root_warning" android:key="disable_root_warning" app:iconSpaceReserved="false" />
+    </piuk.blockchain.android.ui.settings.preferences.CustomPreferenceCategory>
+</PreferenceScreen>

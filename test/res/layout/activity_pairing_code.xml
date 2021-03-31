@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar_general" />
+    <LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/primary_navy_medium" android:gravity="center_vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="1" />
+            <TextView android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/pairing_first_step" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/pairing_code_instruction_1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/primary_navy_medium" android:gravity="center_vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="2" />
+            <TextView android:textColor="@color/black" android:gravity="center_vertical" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/pairing_code_instruction_2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/primary_navy_medium" android:gravity="center_vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="3" />
+            <TextView android:textColor="@color/black" android:gravity="center_vertical" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/pairing_code_instruction_3" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/tv_warning" android:paddingTop="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pairing_code_warning_1" android:alpha="0.7" />
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/qr_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_gravity="center" android:id="@id/iv_qr" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+            </FrameLayout>
+            <Button android:layout_gravity="center_horizontal" android:id="@id/button_qr_toggle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:text="@string/pairing_code_show_qr" style="@style/CtaButton.Blue" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

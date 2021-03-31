@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="WheelArrayDefault">
+        <item>AigeStudio</item>
+        <item>Aige</item>
+        <item>爱哥</item>
+        <item>الحب  اخي</item>
+        <item>jeg elsker</item>
+        <item>사랑해요 형</item>
+        <item>Amor de irmão</item>
+        <item>armastan</item>
+        <item>愛の兄</item>
+        <item>обичам те</item>
+        <item>любовь - братa</item>
+        <item>miłość bracie</item>
+        <item>Liebe</item>
+        <item>Lamour</item>
+        <item>rakastan sinua</item>
+        <item>láska..</item>
+        <item>dragostea.</item>
+        <item>jag älskar</item>
+        <item>ljubezen, brat.</item>
+        <item>愛哥</item>
+        <item>ชอบพี่</item>
+        <item>αγάπη μου</item>
+        <item>a szerelem.</item>
+        <item>Amore, fratello.</item>
+    </string-array>
+    <string-array name="WheelArrayWeek">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string-array name="mnemonic_word_requests">
+        <item>first word</item>
+        <item>second word</item>
+        <item>third word</item>
+        <item>fourth word</item>
+        <item>fifth word</item>
+        <item>sixth word</item>
+        <item>seventh word</item>
+        <item>eighth word</item>
+        <item>ninth word</item>
+        <item>tenth word</item>
+        <item>eleventh word</item>
+        <item>twelfth word</item>
+    </string-array>
+    <array name="preloaded_fonts">
+        <item>@font/inter_medium</item>
+        <item>@font/inter_medium_italic</item>
+        <item>@font/inter_semibold</item>
+        <item>@font/inter_semibold_italic</item>
+        <item>@font/inter_bold</item>
+        <item>@font/inter_bold_italic</item>
+    </array>
+    <string-array name="xlm_memo_types_manual">
+        <item>@string/xlm_memo_text</item>
+        <item>@string/xlm_memo_id</item>
+    </string-array>
+</resources>

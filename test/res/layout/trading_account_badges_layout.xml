@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/green_600" android:background="@drawable/bkgd_green_100_rounded" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/swap_low_fees" style="@style/Text.Semibold.12" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/green_600" android:background="@drawable/bkgd_green_100_rounded" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/swap_faster" android:layout_marginStart="@dimen/very_small_margin" style="@style/Text.Semibold.12" />
+</LinearLayout>

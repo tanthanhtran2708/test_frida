@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/primary_grey_dark" android:paddingLeft="72.0dip" android:paddingTop="32.0dip" android:paddingRight="72.0dip" android:paddingBottom="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/backup_write_down_words" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/primary_grey_dark" android:gravity="center" android:id="@id/textview_word_counter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.5" />
+    <LinearLayout android:gravity="center" android:id="@id/card_layout" android:background="@color/primary_navy_medium" android:layout_width="fill_parent" android:layout_height="128.0dip" android:layout_marginLeft="72.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="72.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="24.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/textview_current_word" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <Button android:layout_gravity="center|left" android:id="@id/button_previous" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:text="@string/backup_previous_word" android:layout_weight="1.0" style="@style/CtaButton.Blue" />
+        <Button android:layout_gravity="center|right" android:id="@id/button_next" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:text="@string/backup_next_word" android:layout_weight="1.0" style="@style/CtaButton.Blue" />
+    </LinearLayout>
+</LinearLayout>

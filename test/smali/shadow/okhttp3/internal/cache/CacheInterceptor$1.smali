@@ -1,0 +1,196 @@
+.class public Lshadow/okhttp3/internal/cache/CacheInterceptor$1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lshadow/okio/Source;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lshadow/okhttp3/internal/cache/CacheInterceptor;->cacheWritingResponse(Lshadow/okhttp3/internal/cache/CacheRequest;Lshadow/okhttp3/Response;)Lshadow/okhttp3/Response;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field public cacheRequestClosed:Z
+
+.field public final synthetic this$0:Lshadow/okhttp3/internal/cache/CacheInterceptor;
+
+.field public final synthetic val$cacheBody:Lshadow/okio/BufferedSink;
+
+.field public final synthetic val$cacheRequest:Lshadow/okhttp3/internal/cache/CacheRequest;
+
+.field public final synthetic val$source:Lshadow/okio/BufferedSource;
+
+
+# direct methods
+.method public constructor <init>(Lshadow/okhttp3/internal/cache/CacheInterceptor;Lshadow/okio/BufferedSource;Lshadow/okhttp3/internal/cache/CacheRequest;Lshadow/okio/BufferedSink;)V
+    .locals 0
+
+    .line 168
+    iput-object p1, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->this$0:Lshadow/okhttp3/internal/cache/CacheInterceptor;
+
+    iput-object p2, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->val$source:Lshadow/okio/BufferedSource;
+
+    iput-object p3, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->val$cacheRequest:Lshadow/okhttp3/internal/cache/CacheRequest;
+
+    iput-object p4, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->val$cacheBody:Lshadow/okio/BufferedSink;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public close()V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 201
+    iget-boolean v0, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->cacheRequestClosed:Z
+
+    if-nez v0, :cond_0
+
+    const/16 v0, 0x64
+
+    sget-object v1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 202
+    invoke-static {p0, v0, v1}, Lshadow/okhttp3/internal/Util;->discard(Lshadow/okio/Source;ILjava/util/concurrent/TimeUnit;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    .line 203
+    iput-boolean v0, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->cacheRequestClosed:Z
+
+    .line 204
+    iget-object v0, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->val$cacheRequest:Lshadow/okhttp3/internal/cache/CacheRequest;
+
+    invoke-interface {v0}, Lshadow/okhttp3/internal/cache/CacheRequest;->abort()V
+
+    .line 206
+    :cond_0
+    iget-object v0, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->val$source:Lshadow/okio/BufferedSource;
+
+    invoke-interface {v0}, Lshadow/okio/Source;->close()V
+
+    return-void
+.end method
+
+.method public read(Lshadow/okio/Buffer;J)J
+    .locals 8
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    .line 174
+    :try_start_0
+    iget-object v1, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->val$source:Lshadow/okio/BufferedSource;
+
+    invoke-interface {v1, p1, p2, p3}, Lshadow/okio/Source;->read(Lshadow/okio/Buffer;J)J
+
+    move-result-wide p2
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    const-wide/16 v1, -0x1
+
+    cmp-long v3, p2, v1
+
+    if-nez v3, :cond_1
+
+    .line 184
+    iget-boolean p1, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->cacheRequestClosed:Z
+
+    if-nez p1, :cond_0
+
+    .line 185
+    iput-boolean v0, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->cacheRequestClosed:Z
+
+    .line 186
+    iget-object p1, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->val$cacheBody:Lshadow/okio/BufferedSink;
+
+    invoke-interface {p1}, Lshadow/okio/Sink;->close()V
+
+    :cond_0
+    return-wide v1
+
+    .line 191
+    :cond_1
+    iget-object v0, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->val$cacheBody:Lshadow/okio/BufferedSink;
+
+    invoke-interface {v0}, Lshadow/okio/BufferedSink;->buffer()Lshadow/okio/Buffer;
+
+    move-result-object v3
+
+    invoke-virtual {p1}, Lshadow/okio/Buffer;->size()J
+
+    move-result-wide v0
+
+    sub-long v4, v0, p2
+
+    move-object v2, p1
+
+    move-wide v6, p2
+
+    invoke-virtual/range {v2 .. v7}, Lshadow/okio/Buffer;->copyTo(Lshadow/okio/Buffer;JJ)Lshadow/okio/Buffer;
+
+    .line 192
+    iget-object p1, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->val$cacheBody:Lshadow/okio/BufferedSink;
+
+    invoke-interface {p1}, Lshadow/okio/BufferedSink;->emitCompleteSegments()Lshadow/okio/BufferedSink;
+
+    return-wide p2
+
+    :catch_0
+    move-exception p1
+
+    .line 176
+    iget-boolean p2, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->cacheRequestClosed:Z
+
+    if-nez p2, :cond_2
+
+    .line 177
+    iput-boolean v0, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->cacheRequestClosed:Z
+
+    .line 178
+    iget-object p2, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->val$cacheRequest:Lshadow/okhttp3/internal/cache/CacheRequest;
+
+    invoke-interface {p2}, Lshadow/okhttp3/internal/cache/CacheRequest;->abort()V
+
+    .line 180
+    :cond_2
+    throw p1
+.end method
+
+.method public timeout()Lshadow/okio/Timeout;
+    .locals 1
+
+    .line 197
+    iget-object v0, p0, Lshadow/okhttp3/internal/cache/CacheInterceptor$1;->val$source:Lshadow/okio/BufferedSource;
+
+    invoke-interface {v0}, Lshadow/okio/Source;->timeout()Lshadow/okio/Timeout;
+
+    move-result-object v0
+
+    return-object v0
+.end method

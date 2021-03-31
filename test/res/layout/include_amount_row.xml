@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0">
+            <TextView android:textColor="@color/primary_grey_dark" android:gravity="center_vertical" android:id="@id/currencyCrypto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="BTC" />
+            <EditText android:textAppearance="?android:textAppearanceMediumInverse" android:textColor="@color/black" android:id="@id/amountCrypto" android:background="@android:color/transparent" android:paddingRight="8.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="0.00" android:selectAllOnFocus="true" android:maxLength="17" android:inputType="numberDecimal" android:imeOptions="actionDone">
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0">
+            <TextView android:textColor="@color/primary_grey_dark" android:gravity="center_vertical" android:id="@id/currencyFiat" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="USD" />
+            <EditText android:textAppearance="?android:textAppearanceMediumInverse" android:textColor="@color/black" android:id="@id/amountFiat" android:background="@android:color/transparent" android:paddingRight="8.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="0.00" android:selectAllOnFocus="true" android:maxLength="17" android:inputType="numberDecimal" android:imeOptions="actionDone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

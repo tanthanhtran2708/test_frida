@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_recover_funds_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar_general" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginBottom="32.0dip" android:text="@string/recover_funds_instructions" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin" style="@style/Text.Standard.14" />
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:hint="@string/recovery_passphrase" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/field_passphrase" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:inputType="textVisiblePassword|textNoSuggestions" android:imeOptions="actionGo" android:contentDescription="@string/recovery_passphrase" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:id="@id/button_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/recover_funds" android:contentDescription="@string/recover_funds" style="@style/CtaButton.Blue" />
+</LinearLayout>

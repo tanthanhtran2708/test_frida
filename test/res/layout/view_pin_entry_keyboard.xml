@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/numericPad" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="4.0dip">
+        <LinearLayout style="@style/PinEntryKeyboardHorizontalContainer">
+            <LinearLayout android:id="@id/button1" android:tag="1" android:contentDescription="@string/keyboard_input_1" style="@style/PinEntryButtonLayout">
+                <TextView android:text="1" style="@style/PinEntryButtonNumberText" />
+                <TextView android:text=" " style="@style/PinEntryButtonLetterText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/button2" android:tag="2" android:contentDescription="@string/keyboard_input_2" style="@style/PinEntryButtonLayout">
+                <TextView android:text="2" style="@style/PinEntryButtonNumberText" />
+                <TextView android:text="ABC" style="@style/PinEntryButtonLetterText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/button3" android:tag="3" android:contentDescription="@string/keyboard_input_3" style="@style/PinEntryButtonLayout">
+                <TextView android:text="3" style="@style/PinEntryButtonNumberText" />
+                <TextView android:text="DEF" style="@style/PinEntryButtonLetterText" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/PinEntryKeyboardHorizontalContainer">
+            <LinearLayout android:id="@id/button4" android:tag="4" android:contentDescription="@string/keyboard_input_4" style="@style/PinEntryButtonLayout">
+                <TextView android:text="4" style="@style/PinEntryButtonNumberText" />
+                <TextView android:text="GHI" style="@style/PinEntryButtonLetterText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/button5" android:tag="5" android:contentDescription="@string/keyboard_input_5" style="@style/PinEntryButtonLayout">
+                <TextView android:text="5" style="@style/PinEntryButtonNumberText" />
+                <TextView android:text="JKL" style="@style/PinEntryButtonLetterText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/button6" android:tag="6" android:contentDescription="@string/keyboard_input_6" style="@style/PinEntryButtonLayout">
+                <TextView android:text="6" style="@style/PinEntryButtonNumberText" />
+                <TextView android:text="MNO" style="@style/PinEntryButtonLetterText" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/PinEntryKeyboardHorizontalContainer">
+            <LinearLayout android:id="@id/button7" android:tag="7" android:contentDescription="@string/keyboard_input_7" style="@style/PinEntryButtonLayout">
+                <TextView android:text="7" style="@style/PinEntryButtonNumberText" />
+                <TextView android:text="PQRS" style="@style/PinEntryButtonLetterText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/button8" android:tag="8" android:contentDescription="@string/keyboard_input_8" style="@style/PinEntryButtonLayout">
+                <TextView android:text="8" style="@style/PinEntryButtonNumberText" />
+                <TextView android:text="TUV" style="@style/PinEntryButtonLetterText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/button9" android:tag="9" android:contentDescription="@string/keyboard_input_9" style="@style/PinEntryButtonLayout">
+                <TextView android:text="9" style="@style/PinEntryButtonNumberText" />
+                <TextView android:text="WXYZ" style="@style/PinEntryButtonLetterText" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:baselineAligned="false" style="@style/PinEntryKeyboardHorizontalContainer">
+            <LinearLayout android:id="@id/button10" style="@style/PinEntryButtonLayout">
+                <TextView android:text=" " style="@style/PinEntryButtonNumberText" />
+                <TextView android:text=" " style="@style/PinEntryButtonLetterText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/button0" android:tag="0" android:contentDescription="@string/keyboard_input_0" style="@style/PinEntryButtonLayout">
+                <TextView android:text="0" style="@style/PinEntryButtonNumberText" />
+                <TextView android:text=" " style="@style/PinEntryButtonLetterText" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/buttonDeleteBack" android:background="@drawable/selector_navy_blue" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/keyboard_input_delete">
+                <ImageView android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/vector_backspace" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

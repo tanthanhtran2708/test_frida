@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/vrff_size_64" android:foreground="?selectableItemBackground" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/vrff_margin_24" android:layout_marginEnd="@dimen/vrff_margin_24">
+        <com.veriff.views.VeriffTextView android:textStyle="bold" android:layout_gravity="end|center" android:id="@id/identification_method_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:vrff_text_color="secondary" style="@style/vrffTextView.text" />
+        <ImageView android:layout_gravity="center" android:id="@id/identification_method_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vrff_ic_id" android:importantForAccessibility="no" android:layout_marginStart="@dimen/vrff_margin_s" />
+    </LinearLayout>
+    <View android:background="@color/vrffDivider" android:layout_width="fill_parent" android:layout_height="@dimen/vrff_identification_method_separator_height" android:alpha="0.5" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/intro_header_parent" android:background="@drawable/ic_buy_sell_intro_background" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/intro_header_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_margin" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/intro_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin" style="@style/Text.Semibold.20" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/intro_header_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/small_margin" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin" style="@style/Text.Light.14" />
+    <View android:id="@id/intro_header_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="0.0dip" style="@style/Separator" />
+</LinearLayout>

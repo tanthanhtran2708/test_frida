@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textStyle="italic" android:layout_gravity="start" android:id="@id/pending_balance_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/common_pending" android:layout_weight="0.5" style="@style/Text.Light.14" />
+    <androidx.appcompat.widget.AppCompatTextView android:gravity="end" android:id="@id/pending_balance" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/common_pending" android:layout_weight="0.5" style="@style/Text.Light.14" />
+</LinearLayout>

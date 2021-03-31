@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_layout_root" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/toolbar_general" />
+        <piuk.blockchain.android.ui.addresses.ExpandableCurrencyHeader android:id="@id/currency_header" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="4.0dip" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview_accounts" android:background="@color/white" android:paddingTop="4.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

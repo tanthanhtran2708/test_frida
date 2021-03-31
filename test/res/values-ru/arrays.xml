@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mnemonic_word_requests">
+        <item>первое слово</item>
+        <item>второе слово</item>
+        <item>третье слово</item>
+        <item>четвертое слово</item>
+        <item>пятое слово</item>
+        <item>шестое слово</item>
+        <item>седьмое слово</item>
+        <item>восьмое слово</item>
+        <item>девятое слово</item>
+        <item>десятое слово</item>
+        <item>одиннадцатое слово</item>
+        <item>двенадцатое слово</item>
+    </string-array>
+    <string-array name="xlm_memo_types_manual">
+        <item>@string/xlm_memo_text</item>
+        <item>@string/xlm_memo_id</item>
+    </string-array>
+</resources>

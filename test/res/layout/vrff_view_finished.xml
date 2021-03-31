@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/upload_completed_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/vrff_margin_24" android:layout_marginStart="@dimen/vrff_margin_24" android:layout_marginEnd="@dimen/vrff_margin_24"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.veriff.views.VeriffTextView android:textStyle="bold" android:gravity="center|top" android:id="@id/complete_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_l" app:vrff_text_color="primary" style="@style/vrffText.16" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@id/complete_image" android:layout_width="fill_parent" android:layout_height="80.0dip" android:src="@drawable/vrff_ic_check" android:importantForAccessibility="no" />
+        <com.veriff.views.VeriffTextView android:textStyle="bold" android:gravity="center|top" android:id="@id/upload_finished_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_90" android:layout_marginBottom="@dimen/vrff_margin_l" style="@style/vrffText.title" />
+        <com.veriff.views.VeriffTextView android:gravity="center|top" android:id="@id/upload_finished_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/vrff_margin_90" style="@style/vrffText.16" />
+    </LinearLayout>
+    <mobi.lab.veriff.layouts.VeriffButton android:id="@id/upload_complete_btn" android:layout_width="fill_parent" android:layout_height="@dimen/vrff_button_height" android:foreground="?selectableItemBackground" android:layout_alignParentBottom="true" app:vrff_button_type="button_text" app:vrff_button_ui="button_filled" style="@style/vrffButton.text" />
+</RelativeLayout>

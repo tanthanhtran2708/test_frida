@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:id="@id/account_name" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" />
+    <ImageView android:id="@id/imageview_qr" android:layout_width="220.0dip" android:layout_height="220.0dip" android:layout_below="@id/account_name" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" android:gravity="center" android:id="@id/address_info" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_below="@id/imageview_qr" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/address_info" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" style="?android:buttonBarStyle">
+        <Space android:id="@id/spacer" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:theme="@style/PlainTheme" android:textColor="@color/primary_blue_accent" android:id="@id/action_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/copy_address" style="?android:buttonBarPositiveButtonStyle" />
+        <Button android:theme="@style/PlainTheme" android:textColor="@color/primary_blue_accent" android:id="@id/action_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/done" style="?android:buttonBarPositiveButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<piuk.blockchain.android.ui.customviews.NonSwipeableViewPager android:id="@id/viewpager" android:tag="layout/activity_pin_entry_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

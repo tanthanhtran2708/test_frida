@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/fragment_fingerprint_prompt_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:background="@color/primary_navy_medium" android:layout_width="fill_parent" android:layout_height="160.0dip">
+            <ImageView android:layout_gravity="center" android:layout_width="96.0dip" android:layout_height="96.0dip" android:tint="@color/white" android:contentDescription="@string/fingerprint_login_title" app:srcCompat="@drawable/vector_fingerprint" />
+        </FrameLayout>
+        <TextView android:layout_marginTop="16.0dip" android:text="@string/onboarding_fingerprint_title" style="@style/OnboardingHeader" />
+        <TextView android:gravity="center" android:text="@string/onboarding_fingerprint_summary" style="@style/OnBoardingDetail" />
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:id="@id/button_enable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="64.0dip" android:layout_marginRight="64.0dip" android:layout_marginBottom="64.0dip" android:text="@string/onboarding_fingerprint_enable" android:contentDescription="@string/onboarding_fingerprint_enable" style="@style/CtaButton.Blue" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
